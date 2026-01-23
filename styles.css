@@ -2,18 +2,30 @@ body{
 	padding:0;
 	margin:0;
 	font-size:16px;
+	height: 100%;
+	color:#e5e5e5de;
+    background: #30303d;
+	text-align:center;
 }
 #body{
 	max-width:1200px;
 	margin:auto;
 }
+h1{
+	letter-spacing: 3px;
+	color:#FFF
+}
+h3{
+	letter-spacing: 1px;;
+}
 .animation-sec{
-	width: 400px;
+	position: relative;
+	overflow: hidden;
+	position:relative;
+	width: 800px;
     height: 340px;
     margin: auto;
-	overflow: hidden;
-    background: #33334b;
-	box-shadow:1px 2px 11px 8px #969696;
+	margin-top:50px;
 }
 .container{
 	padding:100px;
@@ -23,27 +35,27 @@ body{
 	display: flex;
     justify-content: space-around;
 	width: max-content;
-    animation: marquee 10s linear infinite;
+    animation: anime 10s linear infinite;
 }
 .anime-divs p{
 	color: #e5e5e5de;
     font-size: 20px;
     padding: 6px;
-	MARGIN:15px 10px;
+	margin:15px 10px;
     box-shadow: 0px 0px 3px 2px #e5e5e5de;
     border: 1px solid #e5e5e5de;
     border-radius: 7px;
 	position:relative;
 }
-.anime-revers{
+.anime-divs.anime-revers{
+    animation: anime 10s linear infinite;
 	animation-direction: reverse;
-	animation-timing-function:ease;
 }
-@keyframes marquee{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(-50%);
-    }
+.animation-sec {
+	-webkit-mask-image: linear-gradient(to right,transparent 0%,black 20%,black 80%,transparent 100%);
+	mask-image: linear-gradient(to right,transparent 0%,black 20%,black 80%,transparent 100%);
+}
+@keyframes anime {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
