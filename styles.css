@@ -8,7 +8,7 @@ body{
 	text-align:center;
 }
 #body{
-	max-width:1200px;
+	max-width:500px;
 	margin:auto;
 }
 h1{
@@ -22,20 +22,20 @@ h3{
 	position: relative;
 	overflow: hidden;
 	position:relative;
-	width: 800px;
+	width: 439px;
     height: 340px;
     margin: auto;
 	margin-top:50px;
 }
 .container{
-	padding:100px;
+	width:439px;
 }
 .anime-divs{
 	position: relative;
 	display: flex;
     justify-content: space-around;
 	width: max-content;
-    animation: anime 10s linear infinite;
+    animation: anime 9s linear infinite;
 }
 .anime-divs p{
 	color: #e5e5e5de;
@@ -48,7 +48,7 @@ h3{
 	position:relative;
 }
 .anime-divs.anime-revers{
-    animation: anime 10s linear infinite;
+    animation: anime 9s linear infinite;
 	animation-direction: reverse;
 }
 .animation-sec {
@@ -56,6 +56,6 @@ h3{
 	mask-image: linear-gradient(to right,transparent 0%,black 20%,black 80%,transparent 100%);
 }
 @keyframes anime {
-    0% { transform: translateX(0); }
+    0% { transform: translateX(0px); }
     100% { transform: translateX(-50%); }
 }
